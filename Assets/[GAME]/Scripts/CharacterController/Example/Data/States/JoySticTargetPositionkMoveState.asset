@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9875f049d7f44f7aa3a32193edf39e6a, type: 3}
+  m_Name: JoySticTargetPositionkMoveState
+  m_EditorClassIdentifier: 
+  stateName: Target
+  playerControllerData: {fileID: 11400000, guid: e7d417b02eb7c42b9810d8239cfa28e3, type: 2}
