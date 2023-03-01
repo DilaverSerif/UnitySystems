@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace _GAME_.Scripts.Character.Data
 {
-	[CreateAssetMenu(menuName = "Attack System/Create AttackSystemData", fileName = "AttackSystemData", order = 0)]
+	[CreateAssetMenu(menuName = "AI System/Attack System/Create AttackSystemData", fileName = "AttackSystemData", order = 0)]
 	public class AttackSystemData: SerializedScriptableObject
 	{
 		[Serializable]

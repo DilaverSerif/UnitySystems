@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 namespace _GAME_.Scripts.Character
 {
-    [CreateAssetMenu(menuName = "AI/Create MoveData", fileName = "MoveData", order = 0)]
+    [CreateAssetMenu(menuName = "AI System/Create AI MoveData", fileName = "MoveData", order = 0)]
     public class AIMoveData: ScriptableObject
     {
         [FormerlySerializedAs("Speed")] public float speed;

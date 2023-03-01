@@ -4,7 +4,6 @@ using System.Linq;
 using _GAME_.Scripts.Character;
 using _GAME_.Scripts.Character.Abstracs;
 using _GAME_.Scripts.Character.Datas;
-using _GAME_.Scripts.Character.Interfaces;
 using AI_System.Scripts.Data;
 using AI_System.Scripts.Interfaces;
 using Sirenix.OdinInspector;
@@ -30,14 +29,14 @@ namespace AI_System.Scripts.Abstracts
 				if (monoBehaviour.TryGetComponent(out CharacterBase characterBase))
 					characterType = characterBase.CharacterType;
 				else characterType = CharacterTypes.None;
-				
+
 				transform = monoBehaviour.GetComponent<Transform>();
 			}
 		}
 
 		public List<StateAttackData<T>> StateAttackDatas;
 		protected List<AttackState<T>> attackStates;
-		
+
 		[ShowInInspector, ReadOnly]
 		protected AttackState<T> currentState;
 
@@ -52,11 +51,11 @@ namespace AI_System.Scripts.Abstracts
 		{
 			Setup();
 		}
-		
+
 		public virtual void CheckForAttack(IDamageable damageable)
 		{
-			if (currentState.CanAttack(damageable.transform.position,damageable.CharacterType))
-				 StartCoroutine(currentState.AttackCoroutine(damageable));
+			if (currentState.CanAttack(damageable.transform.position, damageable.CharacterType))
+				StartCoroutine(currentState.AttackCoroutine(damageable));
 		}
 
 		public virtual void ChangeState(AttackState<T> state)

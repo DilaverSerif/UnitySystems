@@ -1,7 +1,5 @@
-using _GAME_.Scripts.Character.Interfaces;
 using AI_System.Scripts.Interfaces;
 using Unity.VisualScripting;
-using UnityEngine;
 
 namespace AI_System.Scripts.VisualScripting
 {
@@ -9,8 +7,8 @@ namespace AI_System.Scripts.VisualScripting
     public class MoveUnit: Unit
     {
         private IMovable movable;
-    
         public ControlInput TriggerInput;
+        
         //public ValueInput MoveDirectionInput;
     
         protected override void Definition()

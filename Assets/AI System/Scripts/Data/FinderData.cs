@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 namespace _GAME_.Scripts.Character
 {
-	[CreateAssetMenu(menuName = "Finder/Data/Create FinderData", fileName = "FinderData", order = 0)]
+	[CreateAssetMenu(menuName = "AI System/Finder/Data/Create FinderData", fileName = "FinderData", order = 0)]
 	public class FinderData : ScriptableObject
 	{
 		[BoxGroup("Find Data")]

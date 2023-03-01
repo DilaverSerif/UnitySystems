@@ -1,9 +1,8 @@
-
+using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using System.Collections;
 
-namespace Character
+namespace AI_System.Scripts.Data
 {
     [System.Serializable]
     public class Skill

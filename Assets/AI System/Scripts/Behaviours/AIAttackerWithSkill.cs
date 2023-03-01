@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
-using _GAME_.Scripts.Character;
 using AI_System.Scripts.Abstracts;
+using AI_System.Scripts.Data;
+using Character;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
-namespace Character
+namespace AI_System.Scripts.Behaviours
 {
-    public class AttackerWithSkill : Attacker<EnemyAnimationList>,ISkillable
+    public class AIAttackerWithSkill : Attacker<EnemyAnimationList>,ISkillable
     {
         [BoxGroup("Skill Data")]
         public UsingSkillData[] usingSkillData;
@@ -49,9 +50,4 @@ namespace Character
         
     }
 
-}
-
-public interface IStateAttacker
-{
-    void ChangeState(string stateName);
 }

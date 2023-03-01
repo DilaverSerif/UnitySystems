@@ -1,3 +1,4 @@
+using AI_System.Scripts.Data;
 namespace Character
 {
     public interface ISkillable
