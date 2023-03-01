@@ -3,8 +3,7 @@ using Unity.VisualScripting;
 
 namespace AI_System.Scripts.VisualScripting
 {
-    [UnitCategory("AI/Attack Player")]
-    public class AttackerUnit<T>: Unit where T: System.Enum
+    public abstract class AttackerUnit<T>: Unit where T: System.Enum
     {
         public ControlInput TriggerInput;
         public ValueInput DamageableInput;
@@ -28,4 +27,5 @@ namespace AI_System.Scripts.VisualScripting
             attacker = instance.component.GetComponent<IAttacker<T>>();
         }
     }
+
 }

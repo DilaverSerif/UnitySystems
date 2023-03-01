@@ -4,16 +4,19 @@ using UnityEngine;
 
 namespace AI_System.Scripts.VisualScripting
 {
-    public class SearchTarget<T> : Unit
+    public abstract class SearchTarget<T> : Unit
     {
+        [DoNotSerialize]
         public ControlInput TriggerInput;
-    
+        [DoNotSerialize]
         public ControlOutput NotFoundOutput;
+        [DoNotSerialize]
         public ControlOutput FoundOutput;
-    
+        [DoNotSerialize]
         public ValueOutput TargetOutput;
+        [DoNotSerialize]
         public ValueOutput TargetOutputPosition;
-    
+        [DoNotSerialize]
         private IFinder<T> finder;
 
         protected override void Definition()
@@ -37,8 +40,8 @@ namespace AI_System.Scripts.VisualScripting
         {
             flow.SetValue(TargetOutput,finder.FindTarget());
             flow.SetValue(TargetOutputPosition, finder.GetTargetPosition());
-        
-            return null;
+            
+            return finder.FindTarget() == null ? NotFoundOutput : FoundOutput;
         }
     }
 }

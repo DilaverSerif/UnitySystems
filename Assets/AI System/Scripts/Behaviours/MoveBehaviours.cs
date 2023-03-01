@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using _GAME_.Scripts.Character.Abstracs;
-using _GAME_.Scripts.Character.Interfaces;
 using AI_System.Scripts.Abstracts;
 using AI_System.Scripts.Interfaces;
 using Sirenix.OdinInspector;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace AI_System.Scripts.Behaviours
 {
+	[RequireComponent(typeof(NavMeshAgent))]
 	public class MoveBehaviours : SerializedMonoBehaviour,IMovable
 	{
 		private NavMeshAgent agent;
@@ -16,12 +17,21 @@ namespace AI_System.Scripts.Behaviours
 		
 		[ShowInInspector, ReadOnly]
 		private NavMoveState currentState;
-		private void Start()
+		private void Awake()
 		{
 			agent = GetComponent<NavMeshAgent>();
+			
+			foreach (var state in States)
+			{
+				state.Value.Initialize(agent); 
+			}
+		}
+
+		private void Start()
+		{
 			ChangeState(CharacterStates.Idle);
 		}
-		
+
 		public void Move()
 		{
 			agent.SetDestination(currentState.GetDestination());
@@ -31,8 +41,10 @@ namespace AI_System.Scripts.Behaviours
 			agent.isStopped = true;
 		}
 
-		private void ChangeState(CharacterStates state)
+		public void ChangeState(CharacterStates state)
 		{
+			if (currentState != null)
+				return;
 			currentState = States[state];
 		}
 

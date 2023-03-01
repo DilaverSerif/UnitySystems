@@ -1,23 +1,15 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 namespace AI_System.Scripts.Abstracts
 {
 	[CreateAssetMenu(fileName = "NavMoveRouteState", menuName = "AI System/States/NavMoveRouteState", order = 0)]
 	public class NavMoveRouteState: NavMoveState
 	{
-		private Transform _transform;
-		private Transform transform
-		{
-			get {
-				if(_transform == null)
-					_transform = Agent.transform;
-				return  _transform;
-			}
-		}
-		
 		private Vector3 CurrentDestination
 		{
-			get {
+			get 
+			{
 				return Routes[currentRouteIndex].Position;
 			}
 		}
@@ -29,6 +21,7 @@ namespace AI_System.Scripts.Abstracts
 		}
 		
 		public Route[] Routes;
+		[ShowInInspector, ReadOnly]
 		private int currentRouteIndex;
 		public float DistanceToNextRoute = 0.1f;
 		public float WaitTime;

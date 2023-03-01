@@ -1,3 +1,4 @@
+using Character;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +18,10 @@ namespace AI_System.Scripts.Abstracts
 		
 		protected NavMeshAgent Agent;
 		public abstract Vector3 GetDestination();
+		public void Initialize(NavMeshAgent agent)
+		{
+			Agent = agent;
+		}
 	}
 
 

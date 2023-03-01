@@ -1,12 +1,10 @@
 using _GAME_.Scripts.Character.Abstracs;
-using _GAME_.Scripts.Character.Interfaces;
 using AI_System.Scripts.Interfaces;
 using Character;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
-
-namespace _GAME_.Scripts.Character
+namespace AI_System.Scripts.Behaviours
 {
     [System.Serializable]
     public class HealthSystem:MonoBehaviour,IDamageable,IInitializable

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e404de6857492ea83cd43b134325fa, type: 3}
   m_Name: NavMoveRouteState
   m_EditorClassIdentifier: 
-  Routes: []
+  Routes:
+  - Position: {x: 3, y: 0, z: 0}
+  - Position: {x: 6, y: 0, z: 0}
+  - Position: {x: 8, y: 0, z: 0}
   DistanceToNextRoute: 0.1
-  WaitTime: 0
+  WaitTime: 1
