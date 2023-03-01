@@ -2,40 +2,43 @@ using _GAME_.Scripts.Character.Interfaces;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SearchTarget<T> : Unit
+namespace AI_System.Scripts.VisualScripting
 {
-    public ControlInput TriggerInput;
-    
-    public ControlOutput NotFoundOutput;
-    public ControlOutput FoundOutput;
-    
-    public ValueOutput TargetOutput;
-    public ValueOutput TargetOutputPosition;
-    
-    private IFinder<T> finder;
-
-    protected override void Definition()
+    public class SearchTarget<T> : Unit
     {
-        TriggerInput = ControlInput(nameof(TriggerInput),Finder);
+        public ControlInput TriggerInput;
+    
+        public ControlOutput NotFoundOutput;
+        public ControlOutput FoundOutput;
+    
+        public ValueOutput TargetOutput;
+        public ValueOutput TargetOutputPosition;
+    
+        private IFinder<T> finder;
 
-        TargetOutput = ValueOutput<T>(nameof(TargetOutput));
-        TargetOutputPosition = ValueOutput<Vector3>(nameof(TargetOutputPosition));
+        protected override void Definition()
+        {
+            TriggerInput = ControlInput(nameof(TriggerInput),Finder);
 
-        FoundOutput = ControlOutput(nameof(FoundOutput));
-        NotFoundOutput = ControlOutput(nameof(NotFoundOutput));
-    }
+            TargetOutput = ValueOutput<T>(nameof(TargetOutput));
+            TargetOutputPosition = ValueOutput<Vector3>(nameof(TargetOutputPosition));
 
-    public override void Instantiate(GraphReference instance)
-    {
-        base.Instantiate(instance);
-        finder = instance.component.GetComponent<IFinder<T>>();
-    }
+            FoundOutput = ControlOutput(nameof(FoundOutput));
+            NotFoundOutput = ControlOutput(nameof(NotFoundOutput));
+        }
 
-    private ControlOutput Finder(Flow flow)
-    {
-        flow.SetValue(TargetOutput,finder.FindTarget());
-        flow.SetValue(TargetOutputPosition, finder.GetTargetPosition());
+        public override void Instantiate(GraphReference instance)
+        {
+            base.Instantiate(instance);
+            finder = instance.component.GetComponent<IFinder<T>>();
+        }
+
+        private ControlOutput Finder(Flow flow)
+        {
+            flow.SetValue(TargetOutput,finder.FindTarget());
+            flow.SetValue(TargetOutputPosition, finder.GetTargetPosition());
         
-        return null;
+            return null;
+        }
     }
 }

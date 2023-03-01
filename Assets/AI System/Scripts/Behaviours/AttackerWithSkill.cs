@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _GAME_.Scripts.Character;
+using AI_System.Scripts.Abstracts;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;

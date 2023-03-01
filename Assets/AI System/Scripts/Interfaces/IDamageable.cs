@@ -1,8 +1,7 @@
 using System;
 using _GAME_.Scripts.Character.Abstracs;
 using UnityEngine;
-
-namespace _GAME_.Scripts.Character.Interfaces
+namespace AI_System.Scripts.Interfaces
 {
     public interface IDamageable
     {

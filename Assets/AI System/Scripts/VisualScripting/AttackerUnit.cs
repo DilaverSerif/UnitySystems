@@ -1,18 +1,25 @@
-using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Interfaces;
 using Unity.VisualScripting;
 
-namespace _GAME_.Scripts.Character.VisualScripting
+namespace AI_System.Scripts.VisualScripting
 {
+    [UnitCategory("AI/Attack Player")]
     public class AttackerUnit<T>: Unit where T: System.Enum
     {
         public ControlInput TriggerInput;
-        public ValueInput AttackerInput;
+        public ValueInput DamageableInput;
         
         private IAttacker<T> attacker;
         
         protected override void Definition()
         {
-            
+            TriggerInput = ControlInput(nameof(TriggerInput),Tick);
+        }
+        private ControlOutput Tick(Flow arg)
+        {
+            var damageable = arg.GetValue<IDamageable>(DamageableInput);
+            attacker.CheckForAttack(damageable);
+            return null;
         }
 
         public override void Instantiate(GraphReference instance)

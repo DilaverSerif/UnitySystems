@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using _GAME_.Scripts.Character.Data;
 using _GAME_.Scripts.Character.Datas;
+using AI_System.Scripts.Abstracts;
+using AI_System.Scripts.Data;
 
 namespace _GAME_.Scripts.Character
 {

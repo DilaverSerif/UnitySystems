@@ -1,28 +1,33 @@
 using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Interfaces;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MoveUnit: Unit
+namespace AI_System.Scripts.VisualScripting
 {
-    private IMovable movable;
-    
-    public ControlInput TriggerInput;
-    public ValueInput MoveDirectionInput;
-    
-    protected override void Definition()
+    [UnitCategory("AI/Move")]
+    public class MoveUnit: Unit
     {
-        MoveDirectionInput = ValueInput<Vector3>("MoveDirection");
-        TriggerInput = ControlInput(nameof(TriggerInput), MoveTrigger);    
-    }
-    private ControlOutput MoveTrigger(Flow arg)
-    {
-        movable.Move(arg.GetValue<Vector3>(MoveDirectionInput));
-        return null;
-    }
+        private IMovable movable;
+    
+        public ControlInput TriggerInput;
+        //public ValueInput MoveDirectionInput;
+    
+        protected override void Definition()
+        {
+            //MoveDirectionInput = ValueInput<Vector3>("MoveDirection");
+            TriggerInput = ControlInput(nameof(TriggerInput), MoveTrigger);    
+        }
+        private ControlOutput MoveTrigger(Flow arg)
+        {
+            movable.Move();
+            return null;
+        }
 
-    public override void Instantiate(GraphReference instance)
-    {
-        base.Instantiate(instance);
-        movable = instance.component.GetComponent<IMovable>();
+        public override void Instantiate(GraphReference instance)
+        {
+            base.Instantiate(instance);
+            movable = instance.component.GetComponent<IMovable>();
+        }
     }
 }

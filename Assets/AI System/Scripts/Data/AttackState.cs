@@ -1,13 +1,15 @@
 using System;
 using System.Collections;
+using _GAME_.Scripts.Character;
 using _GAME_.Scripts.Character.Abstracs;
 using _GAME_.Scripts.Character.Datas;
 using _GAME_.Scripts.Character.Interfaces;
-using Character;
+using AI_System.Scripts.Abstracts;
+using AI_System.Scripts.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace _GAME_.Scripts.Character.Data
+namespace AI_System.Scripts.Data
 {
 	public abstract class AttackState<T> where T : Enum
 	{
@@ -43,7 +45,7 @@ namespace _GAME_.Scripts.Character.Data
 		protected abstract void Attack(ref IDamageable healthDamageable);
 		protected abstract bool CanHit(ref Vector3 target);
 		
-		public bool CanAttack(ref Vector3 targetDistance, CharacterTypes targetType)
+		public bool CanAttack(Vector3 targetDistance, CharacterTypes targetType)
 		{
 			return CanHit(ref targetDistance) & !_isAttacking & characterType.CanAttack(targetType);
 		}

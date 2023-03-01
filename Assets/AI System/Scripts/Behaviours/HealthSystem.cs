@@ -1,5 +1,6 @@
 using _GAME_.Scripts.Character.Abstracs;
 using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Interfaces;
 using Character;
 using Sirenix.OdinInspector;
 using UnityEngine;

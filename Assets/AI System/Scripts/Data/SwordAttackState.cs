@@ -1,9 +1,9 @@
 ﻿using System;
-using _GAME_.Scripts.Character.Data;
-using _GAME_.Scripts.Character.Interfaces;
+using _GAME_.Scripts.Character.Datas;
+using AI_System.Scripts.Abstracts;
+using AI_System.Scripts.Interfaces;
 using UnityEngine;
-
-namespace _GAME_.Scripts.Character.Datas
+namespace AI_System.Scripts.Data
 {
 	public class SwordAttackState<T> : AttackState<T> where T : Enum
 	{
