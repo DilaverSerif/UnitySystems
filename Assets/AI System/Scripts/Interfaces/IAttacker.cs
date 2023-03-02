@@ -1,5 +1,4 @@
 using System;
-using _GAME_.Scripts.Character.Data;
 using AI_System.Scripts.Data;
 using UnityEngine;
 namespace AI_System.Scripts.Interfaces

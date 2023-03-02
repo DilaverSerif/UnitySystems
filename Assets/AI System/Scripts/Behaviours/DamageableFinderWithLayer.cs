@@ -1,4 +1,5 @@
 using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Data;
 using AI_System.Scripts.Interfaces;
 using Sirenix.OdinInspector;
 using UnityEditor;

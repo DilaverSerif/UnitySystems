@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using _GAME_.Scripts.Character.Abstracs;
+﻿using _GAME_.Scripts.Character.Abstracs;
 using AI_System.Scripts.Interfaces;
 using Unity.VisualScripting;
-using UnityEngine;
 
 namespace AI_System.Scripts.VisualScripting
 {
@@ -24,7 +22,6 @@ namespace AI_System.Scripts.VisualScripting
 
         private ControlOutput ChangeStateTrigger(Flow arg)
         {
-            // movable.ChangeState(arg.GetValue<CharacterStates>(AIState));
             characterBase.ChangeState(arg.GetValue<CharacterStates>(AIState));
             return ControlOutput;
         }

@@ -18,7 +18,9 @@ namespace _GAME_.Scripts.Character.Abstracs
         Idle,
         Move,
         Attack,
+        Patrol,
         Run,
+        ImmediatelyRun,
         Die
     }
     
@@ -64,7 +66,9 @@ namespace _GAME_.Scripts.Character.Abstracs
         
         public virtual void ChangeState(CharacterStates state)
         {
+            if(CharacterState == CharacterStates.ImmediatelyRun) return;
             if(CharacterState == state) return;
+            
             CharacterState = state;
 
             foreach (var stateMachine in StateMachines)

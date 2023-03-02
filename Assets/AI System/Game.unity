@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -335,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438808549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.74, y: 0.66, z: 0.7}
+  m_LocalPosition: {x: 23.03, y: 0.66, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -674,6 +674,8 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 1a3d8bb06ac2f5f43ace41dad0a1d2a7, type: 2}
     - {fileID: 11400000, guid: 1f2376ed3ef90d74785d61a91f8f9e99, type: 2}
+    - {fileID: 11400000, guid: 69b53b8a1de6a584395d77602bc00bdf, type: 2}
+    - {fileID: 11400000, guid: f792c1ac1a775bb40afda6b876a29ccf, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -699,13 +701,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: $v
       Entry: 10
       Data: 0
@@ -721,6 +723,30 @@ MonoBehaviour:
     - Name: $v
       Entry: 10
       Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
@@ -825,7 +851,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   MaxHealth: 100
-  CurrentHealth: 50
+  CurrentHealth: 10
 --- !u!114 &1171103142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,6 +915,7 @@ GameObject:
   - component: {fileID: 2068715579}
   - component: {fileID: 2068715578}
   - component: {fileID: 2068715577}
+  - component: {fileID: 2068715580}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -962,3 +989,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2068715580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068715576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2

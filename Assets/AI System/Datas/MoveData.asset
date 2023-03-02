@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb6500f7603349f596afd3156502774c, type: 3}
   m_Name: MoveData
   m_EditorClassIdentifier: 
-  speed: 0
-  stoppingDistance: 0
-  rotationSpeed: 0
-  routes: []
-  moveState: 0
-  StoppingDistance: 0
+  speed: 5
+  rotationSpeed: 100
+  stoppingDistance: 0.15

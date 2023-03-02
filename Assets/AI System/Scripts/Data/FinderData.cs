@@ -1,8 +1,7 @@
-﻿using Character;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
-namespace _GAME_.Scripts.Character
+
+namespace AI_System.Scripts.Data
 {
 	[CreateAssetMenu(menuName = "AI System/Finder/Data/Create FinderData", fileName = "FinderData", order = 0)]
 	public class FinderData : ScriptableObject

@@ -1,3 +1,4 @@
+using AI_System.Scripts.Data;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

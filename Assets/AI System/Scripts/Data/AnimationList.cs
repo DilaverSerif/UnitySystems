@@ -1,5 +1,8 @@
-public enum EnemyAnimationList
+namespace AI_System.Scripts.Data
 {
-    Idle,
-    Attack,
+    public enum EnemyAnimationList
+    {
+        Idle,
+        Attack,
+    }
 }

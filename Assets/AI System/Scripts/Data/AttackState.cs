@@ -17,6 +17,9 @@ namespace AI_System.Scripts.Data
 		protected CharacterAnimationSystem<T> animationSystem;
 		protected CharacterTypes characterType;
 		protected readonly Transform thisTransform;
+		
+		private WaitForSeconds attackDelay;
+		private WaitForSeconds attackLoadTime;
 
 		public StateAttackData<T> StateAttackData;
 
@@ -26,6 +29,9 @@ namespace AI_System.Scripts.Data
 			this.characterType = data.characterType;
 			this.thisTransform = data.transform;
 			StateAttackData = stateAttackData;
+			
+			attackDelay = new WaitForSeconds(StateAttackData.AttackDelay);
+			attackLoadTime = new WaitForSeconds(StateAttackData.AttackLoadTime);
 		}
 
 		[ShowInInspector, ReadOnly, BoxGroup("Attack Debug")]
@@ -34,10 +40,10 @@ namespace AI_System.Scripts.Data
 		public virtual IEnumerator AttackCoroutine(IDamageable healthDamageable)
 		{
 			_isAttacking = true;
-			yield return new WaitForSeconds(StateAttackData.AttackDelay);
+			yield return attackDelay;
 			Attack(ref healthDamageable);
 			healthDamageable.TakeDamage(ref healthDamageable, StateAttackData.Damage, ref characterType);
-			yield return new WaitForSeconds(StateAttackData.AttackLoadTime);
+			yield return attackLoadTime;
 			_isAttacking = false;
 		}
 		

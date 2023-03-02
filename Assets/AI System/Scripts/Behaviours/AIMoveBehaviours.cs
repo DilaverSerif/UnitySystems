@@ -18,6 +18,7 @@ namespace AI_System.Scripts.Behaviours
 		
 		[ShowInInspector, ReadOnly]
 		private NavMoveState currentState;
+		
 		private void Awake()
 		{
 			agent = GetComponent<NavMeshAgent>();
@@ -46,9 +47,9 @@ namespace AI_System.Scripts.Behaviours
 		{
 			currentState = States[state];
 			
-			agent.stoppingDistance = currentState.MoveData.stoppingDistance;
-			agent.speed = currentState.MoveData.speed;
-			agent.angularSpeed = currentState.MoveData.rotationSpeed;
+			agent.stoppingDistance = currentState.moveData.stoppingDistance;
+			agent.speed = currentState.moveData.speed;
+			agent.angularSpeed = currentState.moveData.rotationSpeed;
 		}
 	}
 }

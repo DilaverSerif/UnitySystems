@@ -1,8 +1,7 @@
 ﻿using System;
-using Character;
 using Sirenix.OdinInspector;
 using UnityEngine;
-namespace _GAME_.Scripts.Character.Datas
+namespace AI_System.Scripts.Data
 {
 	public class StateAttackData<T> : ScriptableObject where T: Enum
 	{

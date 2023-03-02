@@ -16,7 +16,7 @@ MonoBehaviour:
   StopWhenAttacking: 0
   AttackStateType: 1
   AttackAnim: 1
-  AttackLoadTime: 0
+  AttackLoadTime: 1
   AttackDelay: 0
   AttackRange: 10
   AttackAngle: 55

@@ -1,39 +1,42 @@
 ﻿using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Abstracts;
 using AI_System.Scripts.Interfaces;
 using UnityEngine;
-namespace AI_System.Scripts.Abstracts
+
+namespace AI_System.Scripts.Data
 {
 	[CreateAssetMenu(fileName = "NavMoveToTargetState", menuName = "AI System/States/NavMoveToTargetState")]
 	public class NavMoveToTargetState : NavMoveState
 	{
-		public float DistanceToTarget = 0.1f;
-
-		private Transform _target;
+		public float distanceToTarget = 0.1f;
+		private Transform target;
 
 		private Transform Target
 		{
 			get
 			{
-				if(!_target)
-					_target = transform.GetComponent<IFinder<IDamageable>>().GetTarget();
-				return _target;
+				if(!target)
+					target = Transform.GetComponent<IFinder<IDamageable>>().GetTarget();
+				return target;
 			}
 		}
 		
 		public override Vector3 GetDestination()
 		{
-			if(ReachedTarget())
-				return transform.position;
+			if(ReachedDestination())
+				return Transform.position;
 			
 			return Target.position;
 		}
 		
-		private bool ReachedTarget()
+		public override bool ReachedDestination()
 		{
 			if(Target == null)
 				return true;
 		
-			return Agent.remainingDistance <= DistanceToTarget;
+			return Agent.remainingDistance <= distanceToTarget;
 		}
 	}
+
+
 }

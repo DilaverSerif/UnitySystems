@@ -1,31 +1,49 @@
 using _GAME_.Scripts.Character;
-using Character;
+using AI_System.Scripts.Data;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 namespace AI_System.Scripts.Abstracts
 {
 	public abstract class NavMoveState: ScriptableObject
 	{
-		public AIMoveData MoveData;
+		public AIMoveData moveData;
 		
-		private Transform _transform;
-		protected Transform transform
+		private Transform transform;
+		protected Transform Transform
 		{
 			get {
-				if(_transform == null)
-					_transform = Agent.transform;
-				return  _transform;
+				if(transform == null)
+					transform = Agent.transform;
+				return  transform;
+			}
+		}
+
+		private Enemy enemyBase;
+		protected Enemy EnemyBase
+		{
+			get {
+				if(enemyBase == null)
+					enemyBase = Agent.GetComponent<Enemy>();
+				return  enemyBase;
 			}
 		}
 		
 		protected NavMeshAgent Agent;
 		public abstract Vector3 GetDestination();
 		
-		public void Initialize(NavMeshAgent agent)
+		public virtual void Initialize(NavMeshAgent agent)
 		{
 			Agent = agent;
 		}
+		
+		public abstract bool ReachedDestination();
+		public virtual void OnGizmos()
+		{
+			
+		}
+
 	}
 
 
