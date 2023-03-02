@@ -1,13 +1,12 @@
 using _GAME_.Scripts.Character.Abstracs;
 using AI_System.Scripts.Interfaces;
-using Character;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 namespace AI_System.Scripts.Behaviours
 {
     [System.Serializable]
-    public class HealthSystem:MonoBehaviour,IDamageable,IInitializable
+    public class HealthSystem:MonoBehaviour,IDamageable
     {
         [BoxGroup("Events")]
         public UnityEvent OnHealthChange;
@@ -21,8 +20,11 @@ namespace AI_System.Scripts.Behaviours
         [BoxGroup("Current Datas")]
         public int CurrentHealth;
         
-        [BoxGroup("Current Datas"),ReadOnly]
-        public CharacterTypes CharacterType { get; set; }
+        [BoxGroup("Current Datas"),ShowInInspector]
+        public CharacterTypes CharacterType
+        {
+            get => CharacterTypes.Enemy;
+        }
         
         public bool isDead => CurrentHealth <= 0;
         
@@ -48,11 +50,5 @@ namespace AI_System.Scripts.Behaviours
             }
         }
         
-
-        public void Initialize()
-        {
-            CurrentHealth = MaxHealth;
-            CharacterType = GetComponent<CharacterBase>().CharacterType;
-        }
     }
 }

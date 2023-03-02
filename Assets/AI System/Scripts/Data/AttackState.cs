@@ -22,7 +22,6 @@ namespace AI_System.Scripts.Data
 
 		protected AttackState(Attacker<T>.RefData data, StateAttackData<T> stateAttackData)
 		{
-			this.movable = data.movable;
 			this.animationSystem = data.animationSystem;
 			this.characterType = data.characterType;
 			this.thisTransform = data.transform;

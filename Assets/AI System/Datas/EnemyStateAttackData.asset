@@ -9,8 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a071d00dfdb49e9b7a0bddb486a5e53, type: 3}
-  m_Name: NavMoveToTargetState
+  m_Script: {fileID: 11500000, guid: 39417ee87d7f4479a8f88cdc8c33ca28, type: 3}
+  m_Name: EnemyStateAttackData
   m_EditorClassIdentifier: 
-  MoveData: {fileID: 11400000, guid: 211da44a501e14198bf730ff8be29c71, type: 2}
-  DistanceToTarget: 0.25
+  Damage: 1
+  StopWhenAttacking: 0
+  AttackStateType: 1
+  AttackAnim: 1
+  AttackLoadTime: 0
+  AttackDelay: 0
+  AttackRange: 10
+  AttackAngle: 55

@@ -8,5 +8,6 @@ namespace _GAME_.Scripts.Character.Interfaces
         float GetTargetDistance();
         float GetTargetAngle();
         Vector3 GetTargetPosition();
+        Transform GetTarget();
     }
 }

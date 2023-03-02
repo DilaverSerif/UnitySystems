@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using _GAME_.Scripts.Character.Abstracs;
 using AI_System.Scripts.Abstracts;
 using AI_System.Scripts.Interfaces;
+using AI_System.Scripts.VisualScripting;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AI;
@@ -9,7 +10,7 @@ using UnityEngine.AI;
 namespace AI_System.Scripts.Behaviours
 {
 	[RequireComponent(typeof(NavMeshAgent))]
-	public class MoveBehaviours : SerializedMonoBehaviour,IMovable
+	public class AIMoveBehaviours : SerializedMonoBehaviour,IMovable,IStateMachine
 	{
 		private NavMeshAgent agent;
 		[ShowInInspector]
@@ -26,7 +27,7 @@ namespace AI_System.Scripts.Behaviours
 				state.Value.Initialize(agent); 
 			}
 		}
-
+		
 		private void Start()
 		{
 			ChangeState(CharacterStates.Idle);
@@ -40,13 +41,14 @@ namespace AI_System.Scripts.Behaviours
 		{
 			agent.isStopped = true;
 		}
-
+		
 		public void ChangeState(CharacterStates state)
 		{
-			if (currentState != null)
-				return;
 			currentState = States[state];
+			
+			agent.stoppingDistance = currentState.MoveData.stoppingDistance;
+			agent.speed = currentState.MoveData.speed;
+			agent.angularSpeed = currentState.MoveData.rotationSpeed;
 		}
-
 	}
 }

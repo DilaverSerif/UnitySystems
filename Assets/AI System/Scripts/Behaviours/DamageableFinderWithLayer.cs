@@ -26,8 +26,8 @@ namespace _GAME_.Scripts.Character
        public UnityEvent OnFindTarget;
        [BoxGroup("Events")]
        public UnityEvent OnLostTarget;
-      
-        public IDamageable FindTarget()
+
+       public IDamageable FindTarget()
         {
             var results = Physics.OverlapSphere(transform.position, CurrentData.Radius,CurrentData.TargetMask);
             
@@ -78,6 +78,11 @@ namespace _GAME_.Scripts.Character
             if(Target == null) 
                 return default;
             return Target.transform.position;
+        }
+
+        public Transform GetTarget()
+        {
+            return Target?.transform;
         }
 
         private void OnDrawGizmos()

@@ -17,6 +17,8 @@ namespace AI_System.Scripts.VisualScripting
         [DoNotSerialize]
         public ControlOutput MoveOutput;
         [DoNotSerialize]
+        public ControlOutput NoTargetControlOutput;
+        [DoNotSerialize]
         public ValueInput StateInput;
         
         
@@ -27,17 +29,17 @@ namespace AI_System.Scripts.VisualScripting
             NoTargetControlInput = ControlInput(nameof(NoTargetControlInput), NoTargetMoveTrigger);
             MoveOutput = ControlOutput(nameof(MoveOutput));
             StateInput = ValueInput<CharacterStates>(nameof(StateInput));
+            NoTargetControlOutput = ControlOutput(nameof(NoTargetControlOutput));
         }
         private ControlOutput HasTarget(Flow arg)
         {
-            movable.ChangeState(CharacterStates.Attack);
             movable.Move();
             return MoveOutput;
         }
         private ControlOutput NoTargetMoveTrigger(Flow arg)
         {
             movable.Move();
-            return null;
+            return NoTargetControlOutput;
         }
 
         public override void Instantiate(GraphReference instance)

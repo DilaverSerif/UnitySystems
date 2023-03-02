@@ -12,19 +12,26 @@ namespace AI_System.Scripts.VisualScripting
 		
 		[DoNotSerialize]
 		public ControlInput TriggerInput;
-		[DoNotSerialize]
-		public ControlOutput ControlOutput;
+		
+		public ControlOutput LowHpOutput;
+		public ControlOutput HighHpOutput;
+		
+		public ValueInput LowHpValue;
 		
 		protected override void Definition()
 		{
-			ControlOutput = ControlOutput(nameof(ControlOutput));
 			ControlInput(nameof(TriggerInput),GetHealth);
 			Health = ValueOutput<int>(nameof(GetHealth));
+			LowHpValue = ValueInput<int>(nameof(LowHpValue),0);
+			
+			LowHpOutput = ControlOutput(nameof(LowHpOutput));
+			HighHpOutput = ControlOutput(nameof(HighHpOutput)); 
 		}
 		private ControlOutput GetHealth(Flow arg)
 		{
-			arg.SetValue(Health,0);
-			return ControlOutput;
+			arg.SetValue(Health, damageable.Health);
+				
+			return damageable.Health < arg.GetValue<int>(LowHpValue) ? LowHpOutput : HighHpOutput;
 		}
 
 

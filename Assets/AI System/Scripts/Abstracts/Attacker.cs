@@ -16,14 +16,12 @@ namespace AI_System.Scripts.Abstracts
 	{
 		public struct RefData
 		{
-			public IMovable movable;
 			public CharacterAnimationSystem<T> animationSystem;
 			public CharacterTypes characterType;
 			public Transform transform;
 
 			public RefData(MonoBehaviour monoBehaviour)
 			{
-				movable = monoBehaviour.GetComponent<IMovable>();
 				animationSystem = monoBehaviour.GetComponent<CharacterAnimationSystem<T>>();
 
 				if (monoBehaviour.TryGetComponent(out CharacterBase characterBase))
@@ -45,8 +43,9 @@ namespace AI_System.Scripts.Abstracts
 		{
 			refData = new RefData(this);
 			attackStates = StateAttackDatas.CreateStateByType(ref refData);
+			ChangeState(attackStates[0]);
 		}
-
+	
 		protected virtual void Awake()
 		{
 			Setup();

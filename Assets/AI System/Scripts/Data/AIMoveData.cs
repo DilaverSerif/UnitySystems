@@ -4,17 +4,12 @@ using UnityEngine.Serialization;
 
 namespace _GAME_.Scripts.Character
 {
-    [CreateAssetMenu(menuName = "AI System/Create AI MoveData", fileName = "MoveData", order = 0)]
+    [CreateAssetMenu(menuName = "AI System/Move System/Data/Create AI MoveData", fileName = "MoveData", order = 0)]
     public class AIMoveData: ScriptableObject
     {
-        [FormerlySerializedAs("Speed")] public float speed;
-        [FormerlySerializedAs("StoppingDistance")] public float stoppingDistance;
-        [FormerlySerializedAs("RotationSpeed")] public float rotationSpeed;
-        
-        [ShowIf("moveState", CharacterAIMoveState.Patrol)]
-        public Vector3[] routes;
-        
-        public CharacterAIMoveState moveState;
+        public float speed;
+        public float rotationSpeed;
+        public float stoppingDistance;
     }
     
     public enum CharacterAIMoveState

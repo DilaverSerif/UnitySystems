@@ -12,25 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0a6ca95cb94c878710b4afc2669a64, type: 3}
   m_Name: AttackerWithSkill
   m_EditorClassIdentifier: 
-  SkillPrefab: {fileID: 9089240995844845927, guid: 596e598f9bba4554c87bee69d2e48802,
-    type: 3}
-  OnSkill:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 185537746709633070, guid: 596e598f9bba4554c87bee69d2e48802,
-          type: 3}
-        m_TargetAssemblyTypeName: TestSkillPrefab, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  SkillPrefab: {fileID: 9089240995844845927, guid: 596e598f9bba4554c87bee69d2e48802, type: 3}
   SkillName: Test
   SkillDelay: 5
   SkillRange: 5
   SkillAngle: 40
+  OnSpawnSkill:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndSkill:
+    m_PersistentCalls:
+      m_Calls: []

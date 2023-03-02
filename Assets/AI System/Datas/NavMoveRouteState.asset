@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e404de6857492ea83cd43b134325fa, type: 3}
   m_Name: NavMoveRouteState
   m_EditorClassIdentifier: 
+  MoveData: {fileID: 11400000, guid: 79ae1dd9d08be304794a2375d8523586, type: 2}
   Routes:
   - Position: {x: 3, y: 0, z: 0}
   - Position: {x: 6, y: 0, z: 0}

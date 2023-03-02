@@ -1,5 +1,9 @@
+using _GAME_.Scripts.Character.Interfaces;
+using AI_System.Scripts.Interfaces;
+using AI_System.Scripts.VisualScripting;
 using Sirenix.OdinInspector;
 using UnityEngine;
+
 namespace _GAME_.Scripts.Character.Abstracs
 {
     public enum CharacterTypes
@@ -14,6 +18,7 @@ namespace _GAME_.Scripts.Character.Abstracs
         Idle,
         Move,
         Attack,
+        Run,
         Die
     }
     
@@ -35,14 +40,38 @@ namespace _GAME_.Scripts.Character.Abstracs
         public CharacterTypes CharacterType;
         [BoxGroup("Character")]
         public CharacterStates CharacterState;
+        
+        protected IMovable Movable;
+        protected IAttacker<CharacterStates> Attacker;
+        protected IFinder<IDamageable> Finder;
+        protected IDamageable Damageable;
+        protected IStateMachine[] StateMachines;
+
         protected virtual void OnEnable()
         {
+            Movable = TryGetComponent(out IMovable movable) ? movable : null;
+            Attacker = TryGetComponent(out IAttacker<CharacterStates> attacker) ? attacker : null;
+            Finder = TryGetComponent(out IFinder<IDamageable> finder) ? finder : null;
+            Damageable = TryGetComponent(out IDamageable damageable) ? damageable : null;
+            StateMachines = GetComponents<IStateMachine>();
             OnSpawn();
         }
         
         protected virtual void OnDisable()
         {
             OnDeath();
+        }
+        
+        public virtual void ChangeState(CharacterStates state)
+        {
+            if(CharacterState == state) return;
+            CharacterState = state;
+
+            foreach (var stateMachine in StateMachines)
+            {
+                stateMachine.ChangeState(state);
+            }
+            
         }
 
         protected abstract void OnDeath();
