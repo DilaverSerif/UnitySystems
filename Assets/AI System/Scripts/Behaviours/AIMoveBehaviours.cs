@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using _GAME_.Scripts.Character.Abstracs;
 using AI_System.Scripts.Abstracts;
@@ -50,6 +51,12 @@ namespace AI_System.Scripts.Behaviours
 			agent.stoppingDistance = currentState.moveData.stoppingDistance;
 			agent.speed = currentState.moveData.speed;
 			agent.angularSpeed = currentState.moveData.rotationSpeed;
+		}
+
+		private void OnDrawGizmos()
+		{
+			if (currentState != null)
+				currentState.OnGizmos();
 		}
 	}
 }
