@@ -1,0 +1,1 @@
+public enum ItemsItemNames{ None, PlayerLevel, PlayerHealth}

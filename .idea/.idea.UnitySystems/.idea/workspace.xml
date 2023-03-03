@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/InventorySystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage/ItemNames.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage/ItemNames.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem].meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/ISellable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/ISellable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/IStackable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/IStackable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/IUseble.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Interfaces/IUseble.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerLevel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerLevel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/EnumStorage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/EnumStorage/ItemNames.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/EnumStorage/ItemNames.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerGold.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerGold.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerHealth.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerHealth.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerLevel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/PlayerLevel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2MUZ5DY41NnipnqCDwVEnULromv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/dilaverserif/.local/share/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="" />
+      <created>1677823937364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677823937364</updated>
+      <workItem from="1677823938673" duration="300000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
