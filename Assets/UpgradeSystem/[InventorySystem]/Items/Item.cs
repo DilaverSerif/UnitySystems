@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace InventorySystem.Items
 {
@@ -7,9 +8,9 @@ namespace InventorySystem.Items
     public class Item
     {
         [BoxGroup("Item Data")]
-        public int Id;
+        public int id;
         [BoxGroup("Item Data")]
-        public string Name;
+        public string name;
         
         [PreviewField(50,ObjectFieldAlignment.Left)]
         [BoxGroup("Item Data")]
@@ -20,8 +21,8 @@ namespace InventorySystem.Items
         
         public Item(ItemData data)
         {
-            Id = data.ID;
-            Name = data.Name;
+            id = data.ID;
+            name = data.Name;
             Icon = data.Icon;
             Prefab = data.Prefab;
         }

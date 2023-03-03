@@ -1,61 +1,116 @@
+using System;
 using InventorySystem.Items;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace InventorySystem
 {
-    [System.Serializable]
-    public class Inventory
+    [Serializable]
+    public struct InventorySlot
     {
-        public Item SelectedItem;
+        public int X;
+        public int Y;
         
-        public struct InventorySlot
+        public InventorySlot(int x, int y)
         {
-            public int X;
-            public int Y;
-        
-            public InventorySlot(int x, int y)
+            X = x;
+            Y = y;
+        }
+    }
+    
+    [CreateAssetMenu(fileName = "Inventory", menuName = "InventorySystem/Inventory", order = 0)]
+    public class Inventory: SerializedScriptableObject
+    {
+        private InventorySlot inventorySize;
+        [TableMatrix(HorizontalTitle = "Inventory Array", SquareCells = true, DrawElementMethod = "DrawElement")]
+        public Item[,] InventoryArray;
+
+        [ShowInInspector,ReadOnly]
+        private InventorySlot currentSize;
+
+        static Item DrawElement(Rect rect, Item item)
+        {
+            if (item == null)
             {
-                X = x;
-                Y = y;
+                GUI.DrawTexture(rect, AssetDatabase.LoadAssetAtPath<Texture>("Assets/UpgradeSystem/Icons/NoIcon.png"));
+                return null;
             }
+            if(item.Icon.texture != null)
+                GUI.DrawTexture(rect, item.Icon.texture);
+            else GUI.DrawTexture(rect, AssetDatabase.LoadAssetAtPath<Texture>("Assets/UpgradeSystem/Icons/NoIcon.png"));
+
+            return item;
         }
         
-        public Item[,] InventoryArray;
-        public InventorySlot InventorySize;
-
-        [TableMatrix(SquareCells = true)]
-        public Sprite[,] EditorInventory;
         public Inventory(InventorySlot slot)
         {
-            InventorySize = slot;
+            CreateInventory(ref slot);
+        }
+
+        [Button]
+        private void CreateInventory(ref InventorySlot slot)
+        {
+            inventorySize = slot;
             InventoryArray = new Item[slot.X, slot.Y];
-            Debug.Log("Inventory Created Size:" + InventorySize.X + "x" + InventorySize.Y + "y");
-            for (var x = 0; x < InventorySize.X; x++)
+            currentSize = slot;
+            Debug.Log("Inventory Created Size:" + inventorySize.X + "x" + inventorySize.Y + "y");
+            for (var x = 0; x < inventorySize.X; x++)
             {
-                for (var y = 0; y < InventorySize.Y; y++)
+                for (var y = 0; y < inventorySize.Y; y++)
                 {
                     InventoryArray[x,y] = null;
                 }
             }
             
-            EditorInventory = new Sprite[slot.X, slot.Y];
-            
-            for (var x = 0; x < InventorySize.X; x++)
+        }
+        
+        [Button]
+        private void AddItemEditor(ItemData itemData, InventorySlot slot)
+        {
+            if (slot.X >= inventorySize.X || slot.Y >= inventorySize.Y)
             {
-                for (var y = 0; y < InventorySize.Y; y++)
+                Debug.LogError("Slot is out of range");
+                return;
+            }
+            InventoryArray[slot.X, slot.Y] = new Item(itemData);
+        }
+        
+        //Search item in inventory
+        public Item SearchItem(Item itemData)
+        {
+            for (var x = 0; x < inventorySize.X; x++)
+            {
+                for (var y = 0; y < inventorySize.Y; y++)
+                {
+                    if (InventoryArray[x, y] == null)
+                        continue;
+                    
+                    if (InventoryArray[x, y].name == itemData.name)
+                    {
+                        return InventoryArray[x, y];
+                    }
+                }
+            }
+            return null;
+        }
+        
+        public InventorySlot GetNullSlot()
+        {
+            for (var x = 0; x < inventorySize.X; x++)
+            {
+                for (var y = 0; y < inventorySize.Y; y++)
                 {
                     if (InventoryArray[x, y] == null)
                     {
-                        EditorInventory[x, y] = null;
-                        continue;
+                        return new InventorySlot(x,y);
                     }
-                    
-                    EditorInventory[x,y] = InventoryArray[x,y].Icon;
                 }
             }
+            return new InventorySlot(-1,-1);
         }
-    
+        
         public void AddItem(Item item, InventorySlot slot)
         {
             if(!SlotIsEmpty(slot))
@@ -82,9 +137,9 @@ namespace InventorySystem
         //All clear inventory
         public void ClearInventory()
         {
-            for (var x = 0; x < InventorySize.X; x++)
+            for (var x = 0; x < inventorySize.X; x++)
             {
-                for (var y = 0; y < InventorySize.Y; y++)
+                for (var y = 0; y < inventorySize.Y; y++)
                 {
                     InventoryArray[x,y] = null;
                 }

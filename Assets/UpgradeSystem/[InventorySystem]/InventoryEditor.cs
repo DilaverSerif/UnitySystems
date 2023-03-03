@@ -31,7 +31,7 @@ namespace InventorySystem
     }
 
     [CustomEditor(typeof(PlayerBag))]
-    public class InventoryMenu
+    public class InventoryMenu : Editor
     {
         [InfoBox(@"errorMessage",InfoMessageType.Error)]
         [TableList]
@@ -61,7 +61,7 @@ namespace InventorySystem
         [Button]
         private void CreateEnums()
         {
-            var itemNames = Items.Select(item => item.Name).ToArray();
+            var itemNames = Items.Select(item => item.name).ToArray();
             
             itemNames.CreateEnum("ItemNames","Items_");
         }
@@ -85,8 +85,7 @@ namespace InventorySystem
     public static class InventoryExtension
     {
         
-#if UNITY_EDITOR
-        public static string BasePath = "Assets/InventorySystem/EnumStorage/";
+        private static string BasePath = "Assets/InventorySystem/EnumStorage/";
 
         public static void CreateEnum(this string[] itemsToEnum,string itemName,string title = "Enum_")
         {
@@ -117,7 +116,6 @@ namespace InventorySystem
             AssetDatabase.Refresh();
 
         }
-#endif
         
     }
 }

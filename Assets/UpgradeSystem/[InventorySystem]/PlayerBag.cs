@@ -1,48 +1,64 @@
 using InventorySystem.Items;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace InventorySystem
 {
     public class PlayerBag : SerializedMonoBehaviour
     {
-        public ItemData testdata;
-        public Inventory Inventory;
-
-        [TableMatrix(SquareCells = true)]
-        public Sprite[,] ItemIcon;
+        [FormerlySerializedAs("InventorySize")] [BoxGroup("Size")]
+        public InventorySlot inventorySize;
+        [FormerlySerializedAs("StatSize")] [BoxGroup("Size")]
+        public InventorySlot statSize;
         
-        public static PlayerBag Instance;
-        private void Start()
+        [Title("Inventory")]
+        public Inventory inventory;
+        [Title("Stats")]
+        public Inventory statInventory;
+        [FormerlySerializedAs("Stats")] public ItemData[] stats;
+        private void Awake()
         {
-            Inventory = new Inventory(new Inventory.InventorySlot(3,3));
-        }
+            inventory = ScriptableObject.CreateInstance<Inventory>();
+            statInventory = ScriptableObject.CreateInstance<Inventory>();
 
-        [Button]
-        public void CreateData()
-        {
-            var testItem = new Item(testdata);
-            
-            if(testdata.Type == ItemType.StackableItem)
-                testItem = new Items.StackableItem(testdata);
-            
-            if (testItem.GetItem<Items.StackableItem>() != null)
+            foreach (var stat in stats)
             {
-                Debug.Log("Stackable Item");
+                statInventory.AddItem(new Item(stat),statInventory.GetNullSlot());
             }
-            else Debug.Log("Not Stackable Item");
             
-            Inventory = new Inventory(new Inventory.InventorySlot(3,3));
-            ItemIcon = new Sprite[3,3];
-            
-            for (int i = 0; i < 3; i++)
+        }
+        
+        public bool GetStat(Item[] statData)
+        {
+            foreach (var item in statInventory.InventoryArray)
             {
-                for (int j = 0; j < 3; j++)
+                if (((StatItem)item).CurrentCount == 0) 
+                    return false;
+                
+                foreach (var iData in statData)
                 {
-                    ItemIcon[i, j] = Inventory.InventoryArray[i, j].Icon;
+                    if (item.name != iData.name) continue;
+                    ((StatItem)item).CurrentCount--;
+                    return true;
                 }
             }
+
+            return false;
         }
         
+        public bool GetItem(Item[] itemData)
+        {
+            foreach (var item in itemData)
+            {
+                var foundItem = inventory.SearchItem(item);
+                if (foundItem != null)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }
