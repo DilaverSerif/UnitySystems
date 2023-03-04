@@ -3,27 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -120,6 +101,7 @@
       <workItem from="1677935586293" duration="3904000" />
       <workItem from="1677943024047" duration="459000" />
       <workItem from="1677945028899" duration="5159000" />
+      <workItem from="1677951844248" duration="746000" />
     </task>
     <servers />
   </component>

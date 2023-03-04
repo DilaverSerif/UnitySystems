@@ -15,16 +15,14 @@ MonoBehaviour:
   requirementName: Building
   upgradeID: 0
   requirementsForUpgrade:
-  - Level: 0
-    RequirementsForUpgrade:
+  - RequirementsForUpgrade:
     - itemName: 3
-      requiredAmount: 3
+      requiredAmount: 7
       currentAmount: 0
     - itemName: 1
       requiredAmount: 3
       currentAmount: 0
-  - Level: 0
-    RequirementsForUpgrade:
+  - RequirementsForUpgrade:
     - itemName: 1
       requiredAmount: 5
       currentAmount: 0

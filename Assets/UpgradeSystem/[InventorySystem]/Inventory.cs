@@ -220,7 +220,12 @@ namespace UpgradeSystem._InventorySystem_
 				if (item == null)
 					continue;
 
+				if (item.CurrentCount == 0)
+					return null;
+				
 				item.CurrentCount -= amount;
+				if(item.CurrentCount == 0)
+					RemoveItem(item);
 				return item;
 			}
 			
