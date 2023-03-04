@@ -1,3 +1,4 @@
+using UpgradeSystem._InventorySystem_;
 namespace InventorySystem.Items
 {
     public class UsableAndStackableItem : StackableItem, IUseble

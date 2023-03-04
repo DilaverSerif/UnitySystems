@@ -6,6 +6,7 @@ using InventorySystem;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UpgradeSystem._InventorySystem_;
 using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 using Object = UnityEngine.Object;
 
@@ -39,13 +40,14 @@ namespace UpgradeSystem
 		{
 			var currentReq = GetCurrentRequirementsForUpgrade();
 			if (currentReq == null) return UpgradeState.NotFound;
-			
+
 			foreach (var upgradeItem in currentReq.RequirementsForUpgrade)
 			{
+				if (upgradeItem.IsFinish)
+					continue;
+				
 				if (upgradeItem.itemName == itemName)
 				{
-					if (upgradeItem.IsFinish)
-						return UpgradeState.NotNecessary;
 					return UpgradeState.Necessary;
 				}
 			}
@@ -70,10 +72,12 @@ namespace UpgradeSystem
 		{
 			var currentReq = GetCurrentRequirementsForUpgrade();
 			if (currentReq == null) return UpgradeState.NotFound;
-			
 			foreach (var upgradeItem in itemName)
 			{
-				return ThisIsNeed(upgradeItem.GetItemEnum());
+				var check = ThisIsNeed(upgradeItem.GetItemEnum());
+				if(check == UpgradeState.Necessary)
+					return UpgradeState.Necessary;
+					
 			}
 			
 			return UpgradeState.NotNecessary;
@@ -87,7 +91,6 @@ namespace UpgradeSystem
 			
 			foreach (var upgradeItem in currentRequirements.RequirementsForUpgrade)
 			{
-				Debug.Log(upgradeItem.itemName);
 				switch (upgradeItem.AddItemRequirement(ref itemName, amount))
 				{
 					case RequirementLevel.RequirementType.AddedItem:
@@ -96,7 +99,7 @@ namespace UpgradeSystem
 					case RequirementLevel.RequirementType.NotAdded:
 						if(currentRequirements.RequirementsForUpgrade.Last() == upgradeItem)
 							return UpgradeState.WrongItem;
-						return UpgradeState.NotNecessary;
+						continue;
 					
 					case RequirementLevel.RequirementType.FinishRequirement:
 						if (AllRequirementsFinish())
@@ -117,10 +120,9 @@ namespace UpgradeSystem
 		private bool AllRequirementsFinish() //Upgrade Bitti mi
 		{
 			var currentRequirements = GetRequirementsForUpgrade(upgradeCurrentLevel);
-			
 			if (currentRequirements == null) 
 				return false;
-			
+
 			foreach (var upgradeItem in currentRequirements.RequirementsForUpgrade)
 			{
 				if (!upgradeItem.IsFinish) 
@@ -148,7 +150,9 @@ namespace UpgradeSystem
 		
 		private RequirementLevelArray GetRequirementsForUpgrade(int level)
 		{
-			return requirementsForUpgrade[level];
+			if(level < requirementsForUpgrade.Count)
+				return requirementsForUpgrade[level];
+			return null;
 		}
 		
 	}

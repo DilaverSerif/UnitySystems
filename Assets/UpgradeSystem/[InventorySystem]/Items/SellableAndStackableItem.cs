@@ -1,3 +1,4 @@
+using UpgradeSystem._InventorySystem_;
 namespace InventorySystem.Items
 {
     public class SellableAndStackableItem : StackableItem, ISellable
@@ -16,7 +17,7 @@ namespace InventorySystem.Items
 
         public SellableAndStackableItem(ItemData data) : base(data)
         {
-            Price = data.Price;
+            Price = data.price;
         }
     }
 }

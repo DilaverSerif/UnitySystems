@@ -23,9 +23,9 @@ namespace UpgradeSystem._InventorySystem_
 		
 		public bool HaveItem(ItemData[] items)
 		{
-			var id = items.Select(x => x.ID).ToArray();
+			var id = items.Select(x => x.id).ToArray();
 			
-			if(items[0].Type == ItemType.Stat)
+			if(items[0].type == ItemType.Stat)
 				return statInventory.UseStackableItemByID(id) != null;
 	 
 			return inventory.UseStackableItemByID(id) != null;
@@ -33,10 +33,10 @@ namespace UpgradeSystem._InventorySystem_
 		
 		public bool HaveItem(ItemData item)
 		{
-			if(item.Type == ItemType.Stat)
-				return statInventory.UseStackableItemByID(item.ID) != null;
+			if(item.type == ItemType.Stat)
+				return statInventory.UseStackableItemByID(item.id) != null;
 	 
-			return inventory.UseStackableItemByID(item.ID) != null;
+			return inventory.UseStackableItemByID(item.id) != null;
 		}
 	}
 

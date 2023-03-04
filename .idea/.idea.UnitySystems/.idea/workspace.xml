@@ -3,14 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/ExampleUpgradeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/ExampleUpgradeTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevelArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevelArray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementsForUpgradeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementsForUpgradeData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/ItemData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableAndStackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/SellableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableAndStackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndSellableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableAndStackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/UsableItemData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +34,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5ed476487f143bd945b3b0b1df1e725159a00/34/d2ca36f8/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5ed476487f143bd945b3b0b1df1e725159a00/40/5477925a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.45306632",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.45306632&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/dilaverserif/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dilav\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -63,7 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -80,10 +93,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20881">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="20881" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -105,6 +118,8 @@
       <workItem from="1677867985582" duration="7124000" />
       <workItem from="1677920187839" duration="7232000" />
       <workItem from="1677935586293" duration="3904000" />
+      <workItem from="1677943024047" duration="459000" />
+      <workItem from="1677945028899" duration="5159000" />
     </task>
     <servers />
   </component>
@@ -117,102 +132,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs</url>
-          <line>54</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" initialLine="54" containingFunctionPresentation="method 'CheckItem'">
-            <startOffsets>
-              <option value="1648" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1791" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs</url>
-          <line>69</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" initialLine="69" containingFunctionPresentation="method 'ThisIsNeed'">
-            <startOffsets>
-              <option value="1975" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1976" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs</url>
-          <line>75</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" initialLine="75" containingFunctionPresentation="method 'ThisIsNeed'">
-            <startOffsets>
-              <option value="2144" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2189" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs</url>
-          <line>164</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" initialLine="164" containingFunctionPresentation="method 'AddCountToUpgrade'">
-            <startOffsets>
-              <option value="4138" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4187" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs</url>
-          <line>94</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" initialLine="94" containingFunctionPresentation="method 'AddCount'">
-            <startOffsets>
-              <option value="2136" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2190" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" initialLine="13" containingFunctionPresentation="method 'AddItemRequirement'">
-            <startOffsets>
-              <option value="413" />
-            </startOffsets>
-            <endOffsets>
-              <option value="467" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs</url>
-          <line>18</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" initialLine="18" containingFunctionPresentation="method 'AddItemRequirement'">
-            <startOffsets>
-              <option value="574" />
-            </startOffsets>
-            <endOffsets>
-              <option value="610" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

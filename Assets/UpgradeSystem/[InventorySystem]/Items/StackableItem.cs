@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using UpgradeSystem._InventorySystem_;
 
 namespace InventorySystem.Items
 {
@@ -15,7 +16,7 @@ namespace InventorySystem.Items
 
         public StackableItem(ItemData data) : base(data)
         {
-            MaxCount = data.MaxCount;
+            MaxCount = data.maxCount;
         }
     }
 }

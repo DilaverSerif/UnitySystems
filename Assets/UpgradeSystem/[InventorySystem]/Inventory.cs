@@ -105,7 +105,7 @@ namespace UpgradeSystem._InventorySystem_
 				return;
 			}
 
-			switch (itemData.Type)
+			switch (itemData.type)
 			{
 				case ItemType.Stat:
 					InventoryArray[slot.x, slot.y] = new StatItem(itemData);

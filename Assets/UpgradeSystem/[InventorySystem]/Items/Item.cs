@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UpgradeSystem._InventorySystem_;
 
 namespace InventorySystem.Items
 {
@@ -21,10 +22,10 @@ namespace InventorySystem.Items
         
         public Item(ItemData data)
         {
-            id = data.ID;
+            id = data.id;
             name = data.Name;
-            Icon = data.Icon;
-            Prefab = data.Prefab;
+            Icon = data.icon;
+            Prefab = data.prefab;
         }
         
         public T GetItem<T>() where T : Item

@@ -63,7 +63,7 @@ namespace UpgradeSystem._InventorySystem_
         {
             if(items.Count == 0) 
                 return false;
-            var ids = items.Select(item => item.ID).ToList();
+            var ids = items.Select(item => item.id).ToList();
 
             var duplicates = ids.GroupBy(x => x).
                 Count(group => group.Count() > 1);

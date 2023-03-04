@@ -6,6 +6,7 @@ using InventorySystem;
 using InventorySystem.Items;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UpgradeSystem._InventorySystem_;
 using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 
 namespace UpgradeSystem
@@ -105,7 +106,7 @@ namespace UpgradeSystem
 					break;
 				case UpgradeState.FinishUpgrade:
 					Debug.Log(itemName+" Upgrade complete");
-					upgrades.Remove(upgradeData);
+					//upgrades.Remove(upgradeData);
 					break;
 				case UpgradeState.WrongItem:
 					Debug.LogWarning(itemName+" Wrong item");
@@ -160,7 +161,6 @@ namespace UpgradeSystem
 			foreach (var item in itemName)
 			{
 				var itemEnum = item.GetItemEnum();
-				Debug.LogError(itemEnum);
 				AddCount(ref upgradeData,ref itemEnum,ref count);
 			}
 		}

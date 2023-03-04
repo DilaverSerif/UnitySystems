@@ -1,5 +1,6 @@
 using InventorySystem;
 using UnityEngine;
+using UpgradeSystem._InventorySystem_;
 
 namespace UpgradeSystem
 {

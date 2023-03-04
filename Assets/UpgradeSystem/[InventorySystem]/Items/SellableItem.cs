@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using UpgradeSystem._InventorySystem_;
 
 namespace InventorySystem.Items
 {
@@ -14,7 +15,7 @@ namespace InventorySystem.Items
 
         public SellableItem(ItemData data) : base(data)
         {
-            Price = data.Price;
+            Price = data.price;
         }
     }
 }

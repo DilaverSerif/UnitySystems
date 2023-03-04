@@ -37,7 +37,11 @@ namespace UpgradeSystem
             if (other.TryGetComponent(out PlayerBag playerBag))
             {
                 Debug.Log("Player bag found");
-                if(!CheckItem(ref playerBag)) return;
+                if (!CheckItem(ref playerBag))
+                {
+                    Debug.Log("This is item not needed");
+                    return;
+                }
                 if(upgradeCoroutine != null) return;
             }
 
@@ -52,9 +56,10 @@ namespace UpgradeSystem
 
         protected virtual bool CheckItem(ref PlayerBag playerBag)
         {
-            var check =playerBag.HaveItem(upgradeTriggerData.needItems) & targetUpgrade.ThisIsNeed(upgradeTriggerData.needItems) == UpgradeState.Necessary;
-                
-            if (check)
+            var check =playerBag.HaveItem(upgradeTriggerData.needItems);
+            var needItem = targetUpgrade.ThisIsNeed(upgradeTriggerData.needItems) == UpgradeState.Necessary;
+            
+            if (check & needItem)
                 return true;
             
             return false;

@@ -1,28 +1,29 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
-
-namespace InventorySystem
+using UnityEngine.Serialization;
+namespace UpgradeSystem._InventorySystem_
 {
     [CreateAssetMenu(fileName = "Item", menuName = "Inventory/Item", order = 0)]
     public class ItemData: ScriptableObject
     {
-        public int ID;
+        public int id;
         public string Name; 
         
         [ShowIf("@Type != ItemType.Stat")]
         [PreviewField(50, ObjectFieldAlignment.Left)]
-        public Sprite Icon;
+        public Sprite icon;
+        
         [ShowIf("@Type != ItemType.Stat")]
         [PreviewField(50, ObjectFieldAlignment.Left)]
-        public GameObject Prefab;
+        public GameObject prefab;
         
-        [ShowIf("@Type == ItemType.StackableItem || Type == ItemType.UsableAndStackableItem || Type == ItemType.SellableAndStackableItem || Type == ItemType.UsableAndSellableAndStackableItem")]
-        public int MaxCount;
+        [FormerlySerializedAs("MaxCount")] [ShowIf("@Type == ItemType.StackableItem || Type == ItemType.UsableAndStackableItem || Type == ItemType.SellableAndStackableItem || Type == ItemType.UsableAndSellableAndStackableItem")]
+        public int maxCount;
         
         [ShowIf("@Type == ItemType.SellableItem || Type == ItemType.SellableAndStackableItem || Type == ItemType.UsableAndSellableItem || Type == ItemType.UsableAndSellableAndStackableItem")]
-        public int Price;
+        public int price;
         
-        public ItemType Type;
+        public ItemType type;
     }
 
     public enum ItemType
