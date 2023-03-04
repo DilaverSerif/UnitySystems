@@ -1,11 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using _GAME_.Scripts.UpgradeSystem;
-using InventorySystem;
 using InventorySystem.Items;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UpgradeSystem._InventorySystem_;
 using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 
@@ -64,20 +61,6 @@ namespace UpgradeSystem
 		{
 			return upgrade.upgradeCurrentLevel >= upgrade.maxLevel;
 		}
-		
-		public bool IsNeedItem(Upgrade upgrade,ItemsItemNames itemName)
-		{
-			foreach (var requirementLevelArray in upgrade.requirementsForUpgrade)
-			{
-				foreach (var requirementLevel in requirementLevelArray.RequirementsForUpgrade)
-				{
-					if (requirementLevel.itemName == itemName)
-						return requirementLevel.IsFinish;
-				}
-			}
-
-			return false;
-		}
 
 		#endregion
 		
@@ -129,29 +112,7 @@ namespace UpgradeSystem
 			}
 			
 			var item = itemName.GetItemEnum();
-			switch (upgradeData.AddItemToUpgrade(item, count))
-			{
-				case UpgradeState.FinishLevel:
-					// upgradeData.GetCurrentRequirementsForUpgrade().InvokeEffect();
-					Debug.Log("Level complete - upgrade");
-					return;
-				case UpgradeState.AddedItem:
-					Debug.Log("Item added");
-					break;
-				case UpgradeState.NotFound:
-					Debug.Log("Item not found");
-					break;
-				case UpgradeState.FinishUpgrade:
-					Debug.Log("Upgrade complete");
-					upgrades.Remove(upgradeData);
-					break;
-				case UpgradeState.WrongItem:
-					Debug.LogWarning("Wrong item");
-					break;
-				default:
-					Debug.LogError("Upgrade state not found");
-					throw new ArgumentOutOfRangeException();
-			}
+			AddCount(ref upgradeData,ref item,ref count);
 		}
 		
 		public void AddCountToUpgrade(int upgrade,ItemData[] itemName,int count = 1)

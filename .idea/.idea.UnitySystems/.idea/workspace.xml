@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +11,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5ed476487f143bd945b3b0b1df1e725159a00/34/d2ca36f8/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5ed476487f143bd945b3b0b1df1e725159a00/40/5477925a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
