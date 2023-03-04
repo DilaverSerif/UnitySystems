@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using InventorySystem;
 using InventorySystem.Items;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace InventorySystem
+namespace UpgradeSystem._InventorySystem_
 {
     [ExecuteInEditMode]
     // ReSharper disable once RequiredBaseTypesIsNotInherited
@@ -26,32 +27,23 @@ namespace InventorySystem
             tree.Selection.SupportsMultiSelect = false;
 
             tree.Add("Utilities", new InventoryMenu());
+            // tree.Add("Look Inventory", new InventoryShower());
             return tree;
         }
     }
-
-    [CustomEditor(typeof(PlayerBag))]
-    public class InventoryMenu : Editor
+    
+    public class InventoryMenu
     {
-        [InfoBox(@"errorMessage",InfoMessageType.Error)]
         [TableList]
         public List<Item> Items;
-
-        private string ErrorMessage;
         
         public InventoryMenu()
         {
             Items = new List<Item>();
             
-            var items = Resources.LoadAll<ItemData>($"Items").ToList();
+            var items = UnityEngine.Resources.LoadAll<ItemData>($"Items").ToList();
             
-            if (CheckIDs(ref items))
-            {
-                ErrorMessage = "There are duplicate IDs in the Items folder. Please fix this before continuing.";
-                return;
-            }
-            else ErrorMessage = "";
-            
+
             foreach (var item in items)
             {
                 Items.Add(new Item(item));
@@ -59,7 +51,7 @@ namespace InventorySystem
         }
 
         [Button]
-        private void CreateEnums()
+        public void CreateEnums()
         {
             var itemNames = Items.Select(item => item.name).ToArray();
             

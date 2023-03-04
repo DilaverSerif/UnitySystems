@@ -1,21 +1,18 @@
-using _GAME_.Scripts.UpgradeSystem;
-using InventorySystem;
-using Sirenix.OdinInspector;
 using UnityEngine;
+using UpgradeSystem._InventorySystem_;
 
-public class Building : UpgradeTrigger
+namespace UpgradeSystem.Example
 {
-    public Transform[] upgradeParts;
-    public override void UpgradeFinished(int level)
+    public class Building : UpgradeTrigger
     {
-        upgradeParts[level].gameObject.SetActive(true);
-    }
-    
-    public PlayerBag playerBag;
-    [Button]
-    public void TestButton()
-    {
-        if(!CheckItem(ref playerBag)) return;
-        StartCoroutine(Upgrade(playerBag));
+        public Transform[] upgradeParts;
+        public PlayerBag playerBag;
+
+        protected override void UpgradeFinished(int level)
+        {
+            Debug.Log(level);
+            //upgradeParts[level].gameObject.SetActive(true);
+        }
+        
     }
 }

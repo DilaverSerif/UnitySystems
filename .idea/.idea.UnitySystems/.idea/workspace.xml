@@ -2,492 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d63b830-70ec-44e7-a475-8d6b6d766166" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/link.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Assemblies/link.xml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-HighQuality.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-LowQuality.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-LowQuality.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-MediumQuality.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRP-MediumQuality.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRenderer.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Others/Settings/UniversalRenderer.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/GUIDE.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/GUIDE.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/LeanCommon.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/LeanCommon.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required/Documentation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required/Documentation.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanCommon/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/GUIDE.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/GUIDE.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/LeanTouch.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/LeanTouch.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Documentation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Documentation.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanGesture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanGesture.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/LeanTouch/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/READ ME.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/READ ME.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/CW.Common.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/CW.Common.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Materials/Grid.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Materials/Grid.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Materials/Skybox.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Materials/Skybox.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwRotate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/RimAlpha.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/RimAlpha.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/RimOpaque.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/RimOpaque.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/Skybox.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Shaders/Skybox.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoDescription.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoDescription.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/Grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Examples/Textures/Grid.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwChild.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwChild.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwDepthTextureMode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwDepthTextureMode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwFollow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwFollow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwInputManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwInputManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwRenderTextureManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwRenderTextureManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwCommon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwCommon.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwGuide.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwGuide.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwHelper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwInput.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Shaders/ShapeOutline.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/Required/Shaders/ShapeOutline.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/CW/Shared/Common/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Unity.VisualScripting.Generated.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Unity.VisualScripting.Generated/VisualScripting.Flow.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Others/UniversalRenderPipelineGlobalSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/UpgradeTriggerData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/UpgradeTriggerData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Icons/NoIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Icons/NoIcon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/StatItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/Inventory.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/Inventory.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/StatInventory.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/StatInventory.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnitySystems/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage/ItemNames.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySystem/EnumStorage/ItemNames.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/GUIDE.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/GUIDE.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/LeanCommon.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/LeanCommon.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required/Documentation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required/Documentation.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanCommon/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/GUIDE.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/GUIDE.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/LeanTouch.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/LeanTouch.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Documentation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Documentation.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanGesture.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanGesture.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/LeanTouch/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/READ ME.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/READ ME.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/CW.Common.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/CW.Common.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Materials/Grid.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Materials/Grid.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Materials/Skybox.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Materials/Skybox.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwRotate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/RimAlpha.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/RimAlpha.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/RimOpaque.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/RimOpaque.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/Skybox.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Shaders/Skybox.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoDescription.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoDescription.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/Grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Examples/Textures/Grid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwChild.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwChild.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwDepthTextureMode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwDepthTextureMode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwInputManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwInputManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwRenderTextureManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwRenderTextureManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwRoot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwCommon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwCommon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwGuide.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwGuide.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Shaders/ShapeOutline.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/Required/Shaders/ShapeOutline.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CW/Shared/Common/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Others/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/ExampleUpgrade.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/UpgradeTriggerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Data/UpgradeTriggerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Example/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Example/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/ExampleUpgradeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/ExampleUpgradeTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevelArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/RequirementLevelArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/Upgrade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/UpgradeTriggerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Inventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Items/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerLevel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/PlayerLevel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/EnumStorage/ItemNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/EnumStorage/ItemNames.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/StatInventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/Resources/Items/StatInventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -497,11 +37,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/UpgradeSystem/[InventorySystem]/InventoryEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/50/e2dcc6e1/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2MUZ5DY41NnipnqCDwVEnULromv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -518,19 +58,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.38535413",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/dilaverserif/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/dilaverserif/.local/share/Symbols/src"
+      "C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\dilav\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\dilav\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -538,7 +79,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -555,10 +96,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11432">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11432" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -577,12 +118,15 @@
       <workItem from="1677823938673" duration="300000" />
       <workItem from="1677842235266" duration="1894000" />
       <workItem from="1677861879255" duration="4573000" />
+      <workItem from="1677867985582" duration="7124000" />
+      <workItem from="1677920187839" duration="7232000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">

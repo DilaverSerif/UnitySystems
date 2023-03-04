@@ -16,3 +16,4 @@ MonoBehaviour:
   dropDelay: 0.25
   needItems:
   - {fileID: 11400000, guid: 4b6281e9969ad4c0bbcff1736dad05f8, type: 2}
+  - {fileID: 11400000, guid: 5ce413ff4a2f241e682e83d0a48d9986, type: 2}

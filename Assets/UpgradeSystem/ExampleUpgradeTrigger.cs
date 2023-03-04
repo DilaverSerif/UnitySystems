@@ -2,6 +2,8 @@ using _GAME_.Scripts.UpgradeSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using System.Collections;
+using UpgradeSystem;
+using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 
 public class ExampleUpgradeTrigger : MonoBehaviour
 {

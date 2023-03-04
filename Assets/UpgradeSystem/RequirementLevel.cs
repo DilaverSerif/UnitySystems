@@ -1,33 +1,39 @@
 using System;
-
-namespace _GAME_.Scripts.UpgradeSystem
+using UnityEngine.Serialization;
+using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
+namespace UpgradeSystem
 {
     [Serializable]
     public class RequirementLevel
     {
-        public ItemsItemNames ItemName;
-        public int RequiredAmount;
-        public int CurrentAmount;
-        public RequirementType IsRequirementMet(ref ItemsItemNames item,int count = 1)
+        [FormerlySerializedAs("ItemName")] public ItemsItemNames itemName;
+        [FormerlySerializedAs("RequiredAmount")] public int requiredAmount;
+        [FormerlySerializedAs("CurrentAmount")] public int currentAmount;
+        public RequirementType AddItemRequirement(ref ItemsItemNames item,int count = 1)
         {
-            if(ItemName != item | CurrentAmount >= RequiredAmount) 
-                return RequirementType.NotNecessary;
+            if(itemName != item | currentAmount >= requiredAmount) 
+                return RequirementType.NotAdded;
 			
-            CurrentAmount += count;
+            currentAmount += count;
 			
-            if (CurrentAmount >= RequiredAmount)
+            if (currentAmount >= requiredAmount)
                 return RequirementType.FinishRequirement;
 			
-            return RequirementType.Necessary;
+            return RequirementType.AddedItem;
         }
-		
-        public bool IsFinish => CurrentAmount >= RequiredAmount;
-		
+        
+        public bool IsFinish
+        {
+            get {
+                return currentAmount >= requiredAmount;
+            }
+        }
+
         public enum RequirementType
         {
             FinishRequirement,
-            NotNecessary,
-            Necessary
+            NotAdded,
+            AddedItem
         }
     }
 }

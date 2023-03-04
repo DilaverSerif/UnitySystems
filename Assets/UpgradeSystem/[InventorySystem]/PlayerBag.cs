@@ -1,64 +1,61 @@
-using InventorySystem.Items;
+using System;
+using System.Linq;
+using InventorySystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace InventorySystem
+namespace UpgradeSystem._InventorySystem_
 {
-    public class PlayerBag : SerializedMonoBehaviour
-    {
-        [FormerlySerializedAs("InventorySize")] [BoxGroup("Size")]
-        public InventorySlot inventorySize;
-        [FormerlySerializedAs("StatSize")] [BoxGroup("Size")]
-        public InventorySlot statSize;
-        
-        [Title("Inventory")]
-        public Inventory inventory;
-        [Title("Stats")]
-        public Inventory statInventory;
-        [FormerlySerializedAs("Stats")] public ItemData[] stats;
-        private void Awake()
-        {
-            inventory = ScriptableObject.CreateInstance<Inventory>();
-            statInventory = ScriptableObject.CreateInstance<Inventory>();
+	public class PlayerBag : MonoBehaviour
+	{
+		[Title("Inventory")]
+		public Inventory inventory;
+		[Title("Stats")]
+		public Inventory statInventory;
 
-            foreach (var stat in stats)
-            {
-                statInventory.AddItem(new Item(stat),statInventory.GetNullSlot());
-            }
-            
-        }
-        
-        public bool GetStat(Item[] statData)
-        {
-            foreach (var item in statInventory.InventoryArray)
-            {
-                if (((StatItem)item).CurrentCount == 0) 
-                    return false;
-                
-                foreach (var iData in statData)
-                {
-                    if (item.name != iData.name) continue;
-                    ((StatItem)item).CurrentCount--;
-                    return true;
-                }
-            }
+		// public InventoryShower inventoryShower;
 
-            return false;
-        }
-        
-        public bool GetItem(Item[] itemData)
-        {
-            foreach (var item in itemData)
-            {
-                var foundItem = inventory.SearchItem(item);
-                if (foundItem != null)
-                {
-                    return true;
-                }
-            }
+		private void Awake()
+		{
+			inventory = Instantiate(inventory);
+			statInventory = Instantiate(statInventory);
+		}
+		
+		public bool HaveItem(ItemData[] items)
+		{
+			var id = items.Select(x => x.ID).ToArray();
+			
+			if(items[0].Type == ItemType.Stat)
+				return statInventory.UseStackableItemByID(id) != null;
+	 
+			return inventory.UseStackableItemByID(id) != null;
+		}
+		
+		public bool HaveItem(ItemData item)
+		{
+			if(item.Type == ItemType.Stat)
+				return statInventory.UseStackableItemByID(item.ID) != null;
+	 
+			return inventory.UseStackableItemByID(item.ID) != null;
+		}
+	}
 
-            return false;
-        }
-    }
+	[Serializable]
+	public class InventoryShower
+	{
+		public Inventory[] inventory;
+		public string[] inventoryList;
+		public InventoryShower(Inventory[] inventory)
+		{
+			this.inventory = inventory;
+		}
+
+		public void UpdateInventory()
+		{
+			foreach (var inv in inventory)
+			{
+				foreach (var i in inv.InventoryArray) { }
+			}
+		}
+	}
 }

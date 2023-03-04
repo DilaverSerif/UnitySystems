@@ -17,14 +17,14 @@ MonoBehaviour:
   RequirementsForUpgrade:
   - Level: 0
     RequirementsForUpgrade:
-    - ItemName: 1
-      RequiredAmount: 3
-      CurrentAmount: 0
-    - ItemName: 2
-      RequiredAmount: 3
-      CurrentAmount: 0
+    - itemName: 3
+      requiredAmount: 3
+      currentAmount: 0
+    - itemName: 1
+      requiredAmount: 3
+      currentAmount: 0
   - Level: 1
     RequirementsForUpgrade:
-    - ItemName: 1
-      RequiredAmount: 2
-      CurrentAmount: 0
+    - itemName: 1
+      requiredAmount: 2
+      currentAmount: 0
