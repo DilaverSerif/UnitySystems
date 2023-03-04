@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using _GAME_.Scripts.Character.Abstracs;
 using Character;
 using MaiGames.Scripts.Runtime.Base.InputSystem;
 using Sirenix.OdinInspector;
@@ -14,25 +15,48 @@ namespace _GAME_.Scripts.Player
         [BoxGroup("References")]
         public CharacterController characterController;
         
-        [BoxGroup("States")]
+        [BoxGroup("States"),ShowInInspector,TableList]
         public List<CharacterControllerState> characterControllerStates;
         [BoxGroup("States")]
         [ReadOnly]
         public CharacterControllerState currentState;
 
-        public PlayerJoystickController(CharacterController characterController)
-        {
-            this.characterController = characterController;
-        }
+        #region Player Property
 
-        public void ChangeState(CharacterControllerState state)
+        private Player Player
         {
-            foreach (var characterControllerState in characterControllerStates.Where(controllerState => controllerState == state))
+            get
             {
-                currentState = characterControllerState;
+                if (player == null)
+                    player = characterController.GetComponent<Player>();
+                return player;
             }
         }
-    
+        
+        private Player player;
+        
+        #endregion
+      
+        public void ChangeState(CharacterStates state)
+        {
+            if(Player.CharacterState == state) 
+                return;
+            
+            var newState = characterControllerStates.FirstOrDefault(x => x.characterState == state);
+            
+            if (newState == null)
+                Debug.LogError("State not found");            
+            
+            if (currentState != null)
+                currentState.OnExit();
+            
+            currentState = newState;
+            if (currentState != null) 
+                currentState.OnEnter();
+            
+            Player.CharacterState = state;
+        }
+        
         public void OnUpdate()
         {
             if(!currentState) return;
@@ -49,7 +73,7 @@ namespace _GAME_.Scripts.Player
                 state.Initialize(ref characterController); 
             }
             
-            currentState = characterControllerStates[0];
+            ChangeState(CharacterStates.Idle);
         }
     }
 }

@@ -14,23 +14,12 @@ namespace _GAME_.Scripts.Character.Abstracs
         Idle,
         Move,
         Attack,
-        Die
+        Die,
+        None
     }
     
     public abstract class CharacterBase: MonoBehaviour
     {
-        [BoxGroup("Modeling")]
-        public Transform Model3D;
-        
-        [Button("Create Model"), BoxGroup("Modeling")]
-        public virtual void CreateModel()
-        {
-            var model = Instantiate(Model3D, transform);
-           
-            model.localPosition = Vector3.zero;
-            model.localRotation = Quaternion.identity;
-        }
-        
         [BoxGroup("Character")]
         public CharacterTypes CharacterType;
         [BoxGroup("Character")]

@@ -8,6 +8,7 @@ namespace _GAME_.Scripts.Player
     {
         [ShowInInspector]
         public PlayerJoystickController playerJoystickController;
+        private PlayerInputSubscriber playerInputSubscriber;
         protected override void OnDeath()
         {
             
@@ -15,14 +16,16 @@ namespace _GAME_.Scripts.Player
 
         protected override void OnSpawn()
         {
+            playerInputSubscriber = new PlayerInputSubscriber(ref playerJoystickController);
             playerJoystickController.Initialize();
             StartCoroutine(OnUpdater());
         }
 
         private IEnumerator OnUpdater()
         {
-            while (CharacterStates.Die != CharacterState)
+            while (CharacterState != CharacterStates.Die)
             {
+                playerInputSubscriber.OnUpdate();
                 playerJoystickController.OnUpdate();
                 yield return new WaitForFixedUpdate();
             }
@@ -33,6 +36,4 @@ namespace _GAME_.Scripts.Player
             playerJoystickController.currentState?.OnGizmos();
         }
     }
-
-
 }

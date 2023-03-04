@@ -1,7 +1,9 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using _GAME_.Scripts.Character.Abstracs;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Task = System.Threading.Tasks.Task;
 
 namespace Character
@@ -9,7 +11,7 @@ namespace Character
     [Serializable]
     public abstract class CharacterControllerState : ScriptableObject
     {
-        public string stateName;
+        [FormerlySerializedAs("CharacterState")] public CharacterStates characterState;
         public PlayerControllerData playerControllerData;
         protected CharacterController CharacterController;
 
@@ -75,6 +77,16 @@ namespace Character
             Gizmos.DrawSphere(destinationPosition, 0.25f);
 
             Gizmos.DrawLine(position, destinationPosition);
+        }
+        
+        public virtual void OnEnter()
+        {
+            
+        }
+
+        public virtual void OnExit()
+        {
+            
         }
     }
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffea414ddc84ebeaf7e275bb088babe, type: 3}
   m_Name: NormalMoveState
   m_EditorClassIdentifier: 
-  stateName: Normal
+  characterState: 1
   playerControllerData: {fileID: 11400000, guid: e7d417b02eb7c42b9810d8239cfa28e3, type: 2}

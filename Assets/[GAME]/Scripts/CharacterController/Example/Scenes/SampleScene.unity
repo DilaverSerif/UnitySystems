@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -275,6 +276,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +494,7 @@ GameObject:
   - component: {fileID: 1229013674}
   - component: {fileID: 1229013678}
   - component: {fileID: 1229013677}
-  - component: {fileID: 1229013676}
+  - component: {fileID: 1229013679}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -540,30 +561,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229013672}
   m_CullTransparentMesh: 1
---- !u!114 &1229013676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229013672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 965e522e460d14045bbd7c22446253d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deadZone: 0
-  offset: 1
-  isArea: 0
-  area:
-    MaxPos: {x: 0, y: 0}
-    MinPos: {x: 0, y: 0}
-  OnEnableJoystick:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDisableJoystick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!225 &1229013677
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -590,6 +587,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 0
   m_AspectRatio: 1
+--- !u!114 &1229013679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229013672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a22e0cf7a804006b61cd10e732662e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadZone: 0
+  offset: 1
+  isArea: 0
+  area:
+    MaxPos: {x: 0, y: 0}
+    MinPos: {x: 0, y: 0}
+  OnEnableJoystick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDisableJoystick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1340763707
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,10 +694,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8809982681891392065, guid: 223d241ee1d044c0597afe79833e69df, type: 3}
-      propertyPath: playerJoystickController.playerControllerData
-      value: 
-      objectReference: {fileID: 11400000, guid: e7d417b02eb7c42b9810d8239cfa28e3, type: 2}
     - target: {fileID: 8809982681891392065, guid: 223d241ee1d044c0597afe79833e69df, type: 3}
       propertyPath: playerJoystickController.characterControllerStates.Array.size
       value: 2
