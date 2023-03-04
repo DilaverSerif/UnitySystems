@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7acb5b4014b346ed8fe41ffaf8be3e1b, type: 3}
   m_Name: ExampleUpgrade
   m_EditorClassIdentifier: 
-  Name: "Bu\xEDlding"
-  UpgradeID: 0
-  RequirementsForUpgrade:
+  requirementName: Building
+  upgradeID: 0
+  requirementsForUpgrade:
   - Level: 0
     RequirementsForUpgrade:
     - itemName: 3
@@ -23,8 +23,8 @@ MonoBehaviour:
     - itemName: 1
       requiredAmount: 3
       currentAmount: 0
-  - Level: 1
+  - Level: 0
     RequirementsForUpgrade:
     - itemName: 1
-      requiredAmount: 2
+      requiredAmount: 5
       currentAmount: 0

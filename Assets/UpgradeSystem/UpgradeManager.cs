@@ -10,11 +10,10 @@ using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 
 namespace UpgradeSystem
 {
-	[DefaultExecutionOrder(1)]
 	public class UpgradeManager : MonoBehaviour
 	{
-		[FormerlySerializedAs("RequirementsForUpgradeData")] public List<RequirementsForUpgradeData> requirementsForUpgradeData;
-		[FormerlySerializedAs("Upgrades")] public List<Upgrade> upgrades;
+		public List<RequirementsForUpgradeData> requirementsForUpgradeData;
+		public List<Upgrade> upgrades;
 
 		private void Awake()
 		{
@@ -32,7 +31,7 @@ namespace UpgradeSystem
 
 		public Upgrade GetUpgradeWithID(int upgradeID)
 		{
-			var upgrade = upgrades.Find(upgrade => upgrade.UpgradeID == upgradeID);
+			var upgrade = upgrades.Find(upgrade => upgrade.upgradeID == upgradeID);
 			if (upgrade != null) return upgrade;
 			
 			Debug.LogError("Upgrade with ID: " + upgradeID + " not found");
@@ -41,7 +40,7 @@ namespace UpgradeSystem
 		
 		public Upgrade GetUpgradeWithName(string upgradeName)
 		{
-			return upgrades.Find(upgrade => upgrade.Name == upgradeName);
+			return upgrades.Find(upgrade => upgrade.name == upgradeName);
 		}
 
 		#endregion
@@ -51,7 +50,7 @@ namespace UpgradeSystem
 		public bool ResetUpgradeLevel(Upgrade upgrade)
 		{
 			if (upgrade == null) return false;
-			upgrade.UpgradeCurrentLevel = 0;
+			upgrade.upgradeCurrentLevel = 0;
 			
 			return true;
 		}
@@ -62,12 +61,12 @@ namespace UpgradeSystem
 		
 		private bool CurrentUpgradeLevelIsMax(Upgrade upgrade)
 		{
-			return upgrade.UpgradeCurrentLevel >= upgrade.MaxLevel;
+			return upgrade.upgradeCurrentLevel >= upgrade.maxLevel;
 		}
 		
 		public bool IsNeedItem(Upgrade upgrade,ItemsItemNames itemName)
 		{
-			foreach (var requirementLevelArray in upgrade.RequirementsForUpgrade)
+			foreach (var requirementLevelArray in upgrade.requirementsForUpgrade)
 			{
 				foreach (var requirementLevel in requirementLevelArray.RequirementsForUpgrade)
 				{
@@ -99,20 +98,20 @@ namespace UpgradeSystem
 					Debug.Log("Level complete - upgrade");
 					return;
 				case UpgradeState.AddedItem:
-					Debug.Log("Item added");
+					Debug.Log( itemName+" Item added");
 					break;
 				case UpgradeState.NotFound:
-					Debug.Log("Item not found");
+					Debug.Log(itemName+" Item not found");
 					break;
 				case UpgradeState.FinishUpgrade:
-					Debug.Log("Upgrade complete");
+					Debug.Log(itemName+" Upgrade complete");
 					upgrades.Remove(upgradeData);
 					break;
 				case UpgradeState.WrongItem:
-					Debug.LogWarning("Wrong item");
+					Debug.LogWarning(itemName+" Wrong item");
 					break;
 				case UpgradeState.NotNecessary:
-					Debug.LogWarning("Item not necessary");
+					Debug.LogWarning(itemName+" Item not necessary");
 					break;
 				default:
 					Debug.LogError("Upgrade state not found");
@@ -161,6 +160,7 @@ namespace UpgradeSystem
 			foreach (var item in itemName)
 			{
 				var itemEnum = item.GetItemEnum();
+				Debug.LogError(itemEnum);
 				AddCount(ref upgradeData,ref itemEnum,ref count);
 			}
 		}

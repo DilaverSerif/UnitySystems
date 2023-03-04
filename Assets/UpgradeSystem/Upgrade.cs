@@ -5,6 +5,7 @@ using _GAME_.Scripts.UpgradeSystem;
 using InventorySystem;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UpgradeSystem._InventorySystem_.Resources.EnumStorage;
 using Object = UnityEngine.Object;
 
@@ -14,24 +15,24 @@ namespace UpgradeSystem
 	[Serializable]
 	public class Upgrade
 	{
-		public string Name;
-		public int UpgradeID;
+		public string name;
+		public int upgradeID;
 		
-		public int UpgradeCurrentLevel;
-		public int MaxLevel;
+		public int upgradeCurrentLevel;
+		public int maxLevel;
 	
-		public List<RequirementLevelArray> RequirementsForUpgrade;
-		public UnityEvent<int> UpgradeEffect;
+		public List<RequirementLevelArray> requirementsForUpgrade;
+		public UnityEvent<int> upgradeEffect;
 
 		public Upgrade(RequirementsForUpgradeData data)
 		{
 			if (data == null) return;
 
 			var duplicate = Object.Instantiate(data);
-			Name = duplicate.Name;
-			UpgradeID = duplicate.UpgradeID;
-			MaxLevel = duplicate.RequirementsForUpgrade.Count;
-			RequirementsForUpgrade = duplicate.RequirementsForUpgrade;
+			name = duplicate.requirementName;
+			upgradeID = duplicate.upgradeID;
+			maxLevel = duplicate.requirementsForUpgrade.Count;
+			requirementsForUpgrade = duplicate.requirementsForUpgrade;
 		}
 
 		public UpgradeState ThisIsNeed(ItemsItemNames itemName)
@@ -43,7 +44,7 @@ namespace UpgradeSystem
 			{
 				if (upgradeItem.itemName == itemName)
 				{
-					if (upgradeItem.IsFinish) 
+					if (upgradeItem.IsFinish)
 						return UpgradeState.NotNecessary;
 					return UpgradeState.Necessary;
 				}
@@ -86,6 +87,7 @@ namespace UpgradeSystem
 			
 			foreach (var upgradeItem in currentRequirements.RequirementsForUpgrade)
 			{
+				Debug.Log(upgradeItem.itemName);
 				switch (upgradeItem.AddItemRequirement(ref itemName, amount))
 				{
 					case RequirementLevel.RequirementType.AddedItem:
@@ -114,7 +116,7 @@ namespace UpgradeSystem
 		
 		private bool AllRequirementsFinish() //Upgrade Bitti mi
 		{
-			var currentRequirements = GetRequirementsForUpgrade(UpgradeCurrentLevel);
+			var currentRequirements = GetRequirementsForUpgrade(upgradeCurrentLevel);
 			
 			if (currentRequirements == null) 
 				return false;
@@ -125,10 +127,10 @@ namespace UpgradeSystem
 					return false;
 			}
 			
-			UpgradeEffect.Invoke(UpgradeCurrentLevel);
-			UpgradeCurrentLevel++;
+			upgradeEffect.Invoke(upgradeCurrentLevel);
+			upgradeCurrentLevel++;
 
-			if (UpgradeCurrentLevel >= MaxLevel)
+			if (upgradeCurrentLevel >= maxLevel)
 				return true;
 			
 			return false;
@@ -136,17 +138,17 @@ namespace UpgradeSystem
 
 		public bool IsEmpty()
 		{
-			return RequirementsForUpgrade.Count == 0;
+			return requirementsForUpgrade.Count == 0;
 		}
 		
 		public RequirementLevelArray GetCurrentRequirementsForUpgrade()
 		{
-			return GetRequirementsForUpgrade(UpgradeCurrentLevel);
+			return GetRequirementsForUpgrade(upgradeCurrentLevel);
 		}
 		
 		private RequirementLevelArray GetRequirementsForUpgrade(int level)
 		{
-			return RequirementsForUpgrade[level];
+			return requirementsForUpgrade[level];
 		}
 		
 	}

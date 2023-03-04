@@ -30,7 +30,7 @@ public class ExampleUpgradeTrigger : MonoBehaviour
 
    private void Sub()
    {
-      upgradeManager.GetUpgradeWithID(0).UpgradeEffect.AddListener(LevelUpdates);
+      upgradeManager.GetUpgradeWithID(0).upgradeEffect.AddListener(LevelUpdates);
    }
 
    private void LevelUpdates(int arg0)

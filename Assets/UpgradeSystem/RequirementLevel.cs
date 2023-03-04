@@ -6,9 +6,9 @@ namespace UpgradeSystem
     [Serializable]
     public class RequirementLevel
     {
-        [FormerlySerializedAs("ItemName")] public ItemsItemNames itemName;
-        [FormerlySerializedAs("RequiredAmount")] public int requiredAmount;
-        [FormerlySerializedAs("CurrentAmount")] public int currentAmount;
+        public ItemsItemNames itemName;
+        public int requiredAmount;
+        public int currentAmount;
         public RequirementType AddItemRequirement(ref ItemsItemNames item,int count = 1)
         {
             if(itemName != item | currentAmount >= requiredAmount) 

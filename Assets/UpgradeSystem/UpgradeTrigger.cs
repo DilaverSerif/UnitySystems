@@ -24,12 +24,12 @@ namespace UpgradeSystem
         {
             if(finished) return;
             targetUpgrade = upgradeManager.GetUpgradeWithID(upgradeTriggerData.upgradeID);
-            targetUpgrade.UpgradeEffect.AddListener(UpgradeFinished);
+            targetUpgrade.upgradeEffect.AddListener(UpgradeFinished);
         }
 
         protected virtual void OnDisable()
         {
-            targetUpgrade.UpgradeEffect.RemoveListener(UpgradeFinished);
+            targetUpgrade.upgradeEffect.RemoveListener(UpgradeFinished);
         }
 
         protected void OnTriggerEnter(Collider other)
@@ -52,13 +52,11 @@ namespace UpgradeSystem
 
         protected virtual bool CheckItem(ref PlayerBag playerBag)
         {
-            var check =playerBag.HaveItem(upgradeTriggerData.needItems) & 
-                       targetUpgrade.ThisIsNeed(upgradeTriggerData.needItems) == UpgradeState.Necessary;
+            var check =playerBag.HaveItem(upgradeTriggerData.needItems) & targetUpgrade.ThisIsNeed(upgradeTriggerData.needItems) == UpgradeState.Necessary;
                 
             if (check)
                 return true;
             
-            Debug.LogError("Not found item type");
             return false;
         }
     
@@ -66,8 +64,7 @@ namespace UpgradeSystem
         {
             while (CheckItem(ref playerBag)) //Gerekli itemler var mı?
             {
-                upgradeManager.AddCountToUpgrade(upgradeTriggerData.upgradeID, 
-                    upgradeTriggerData.needItems);
+                upgradeManager.AddCountToUpgrade(upgradeTriggerData.upgradeID, upgradeTriggerData.needItems);
                 yield return waitForSDelay;
             }
         
